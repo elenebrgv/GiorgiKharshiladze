@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>გიორგის ელენესგან ❤️ | პირადი წერილი</title>
+  <meta name="description" content="ელეგანტური, რომანტიული საიტი გერმანელ გიორგი ხარშილაძეს ელენე ბრეგვაძისგან.">
+  <meta name="theme-color" content="#f5f3f0">
+
+  <!-- Google Fonts: Noto Serif Georgian & Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Snowy / Cloud Ambient Accents -->
+  <div class="top-ambient-clouds" aria-hidden="true">
+    <div class="snow-cloud cloud-left"></div>
+    <div class="snow-cloud cloud-center"></div>
+    <div class="snow-cloud cloud-right"></div>
+    <div class="frost-veil"></div>
+  </div>
+
+  <!-- Background Canvas for Gentle Drifting Hearts & Stars -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Romantic Words Drifting Across Screen -->
+  <div class="floating-phrases-layer" aria-hidden="true">
+    <span class="floating-phrase phrase-1">მიყვარხარ <span class="emoji-heart">❤️</span></span>
+    <span class="floating-phrase phrase-2">მენატრები <span class="emoji-heart">❤️</span></span>
+    <span class="floating-phrase phrase-3">მალე ჩამოდი <span class="emoji-star">⭐</span></span>
+    <span class="floating-phrase phrase-4">გელოდებით <span class="emoji-heart">❤️</span></span>
+    <span class="floating-phrase phrase-5">მიყვარხარ <span class="emoji-heart">❤️</span></span>
+    <span class="floating-phrase phrase-6">მენატრები <span class="emoji-heart">❤️</span></span>
+    <span class="floating-phrase phrase-7">მალე ჩამოდი <span class="emoji-star">⭐</span></span>
+  </div>
+
+  <!-- Top Navigation & Ambient Controls -->
+  <header class="page-header">
+    <div class="header-seal-badge">
+      <span class="seal-icon">💌</span>
+      <span class="seal-text">პირადი წერილი • ელენე & გიორგი</span>
+    </div>
+
+    <div class="header-actions">
+      <!-- Romantic Audio Toggle -->
+      <button id="music-toggle-btn" class="nav-pill-btn" type="button" aria-label="მელოდიის ჩართვა/გამორთვა">
+        <span class="btn-icon" id="music-icon">🎵</span>
+        <span class="btn-label" id="music-label">მელოდია</span>
+        <span class="sound-bars" id="sound-bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+
+      <!-- Quick Letter Button in Header -->
+      <button id="header-letter-btn" class="nav-pill-btn letter-nav-btn" type="button">
+        <span>წერილი</span> <span class="emoji-heart">❤️</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Hero Presentation -->
+  <main class="main-wrapper">
+    <div class="hero-container">
+
+      <!-- Central Romantic Card -->
+      <article class="romantic-hero-card" id="hero-card">
+        
+        <!-- Classical Ornamental Crest & Wax Seal -->
+        <div class="card-crest-wrapper">
+          <div class="wax-seal">
+            <span class="wax-seal-symbol">ღ</span>
+            <div class="wax-seal-ring"></div>
+          </div>
+        </div>
+
+        <div class="card-date-badge">
+          <span>საქართველო ✦ გერმანია</span>
+        </div>
+
+        <!-- Main Title / Message Requested by User -->
+        <header class="card-header">
+          <h1 class="main-dedication">
+            <span class="dedication-line line-1">გერმანელ გიორგი ხარშილაძეს,</span>
+            <span class="dedication-line line-2">რომელსაც ძალიან ენატრება საქართველო,</span>
+            <div class="ornament-divider" aria-hidden="true">
+              <span class="ornament-line"></span>
+              <span class="ornament-star">✦</span>
+              <span class="ornament-line"></span>
+            </div>
+            <span class="dedication-line line-3">ელენე ბრეგვაძისგან</span>
+            <span class="dedication-line line-4">ეს არაჩვეულებრივი საიტი <span class="heart-pulse">❤️</span></span>
+          </h1>
+        </header>
+
+        <!-- Subtext Requested by User -->
+        <div class="delicate-subtext">
+          <p class="subtext-line-1">მიყვარხარ და მენატრები,</p>
+          <p class="subtext-line-2">ენატრები რუსთავს და დონეცკებს იაციკ <span class="gold-star">⭐</span></p>
+        </div>
+
+        <!-- Interactive Action Buttons -->
+        <div class="interactive-button-group">
+          
+          <!-- Button 1: Warm Deep Red "დააწირე აქ ❤️" -->
+          <button id="btn-burst-hearts" class="btn-action btn-crimson" type="button" aria-label="დააწირე აქ და ამოაფრქვიე გულები">
+            <span class="btn-shimmer"></span>
+            <span class="btn-text-content">
+              დააწირე აქ <span class="btn-emoji">❤️</span>
+            </span>
+          </button>
+
+          <!-- Button 2: Warm Gold "გაუგზავნე ელენეს ჩახუტება 💌" -->
+          <button id="btn-send-hug" class="btn-action btn-gold" type="button" aria-label="გაუგზავნე ელენეს ჩახუტება">
+            <span class="btn-shimmer"></span>
+            <span class="btn-text-content">
+              გაუგზავნე ელენეს ჩახუტება <span class="btn-emoji">💌</span>
+            </span>
+          </button>
+
+        </div>
+
+        <!-- Letter Open Trigger Button -->
+        <div class="letter-trigger-section">
+          <button id="btn-open-letter" class="btn-open-letter" type="button" aria-label="წერილის გახსნა">
+            <span class="letter-icon">📜</span>
+            <span class="letter-btn-text">დაწერილი ელენეს მიერ • წაიკითხე წერილი</span>
+            <span class="emoji-heart">❤️</span>
+          </button>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Interactive Stage: Flying Envelope Animation (Button 2) -->
+  <div id="envelope-overlay" class="envelope-overlay" aria-hidden="true">
+    <div class="envelope-card-stage" id="envelope-card-stage">
+      <div class="vintage-envelope" id="vintage-envelope">
+        <div class="envelope-flap" id="envelope-flap"></div>
+        <div class="envelope-pocket"></div>
+        <div class="envelope-letter-paper" id="envelope-letter-paper">
+          <div class="inner-paper-seal">💌</div>
+          <div class="inner-paper-title">შენთვის, გიორგი</div>
+          <div class="inner-paper-heart">❤️</div>
+        </div>
+        <div class="envelope-wax-badge">❤️</div>
+      </div>
+      <div class="delivery-status-box" id="delivery-status-box">
+        <span class="check-icon">✓</span>
+        <span class="status-text">გაგზავნილია! ჩახუტება მიღებულია ❤️</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage for Heart Explosion Burst (Button 1) -->
+  <div id="hearts-burst-stage" class="hearts-burst-stage" aria-hidden="true"></div>
+
+  <!-- Modal / Overlay for the Full Heartfelt Letter -->
+  <div id="letter-modal" class="letter-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-letter-title">
+    <div class="letter-parchment-sheet">
+      
+      <!-- Close Button -->
+      <button id="modal-close-btn" class="modal-close-btn" type="button" aria-label="დახურვა">
+        ✕
+      </button>
+
+      <!-- Classical Header & Wax Seal -->
+      <div class="parchment-crest">
+        <div class="modal-wax-seal">
+          <span>❤️</span>
+        </div>
+      </div>
+
+      <div class="modal-letter-header">
+        <span class="modal-vintage-date">პირადი წერილი რუსთავიდან</span>
+        <h2 id="modal-letter-title" class="modal-letter-heading">გიორგის ელენესგან</h2>
+        <div class="modal-divider">
+          <span>❦</span>
+        </div>
+      </div>
+
+      <!-- Exact Text of the Letter Requested by User -->
+      <div class="parchment-body-text">
+        <p class="letter-stanza">
+          გიორგი ხარშილაძე გერმანიაში ზის, რუსთავის მონატრება გულში აქვს ჩარჩენილი. ელენე ბრეგვაძე ენატრება ძალიან, მის გარეშე დღეები ეჩვენება ზამთრად.
+        </p>
+
+        <p class="letter-stanza">
+          დონეცკები ახსენდება, მეგობრების ამბავი, ჭაბა, ჯაბა, მანდო — მისი ძმაკაცების რაზმი. ლევანა, სკილეტა, პაპექსაც იქვე, გიორგი ფიქრობს: „ნეტა ვიყო თქვენთან ისევ!"
+        </p>
+
+        <p class="letter-stanza">
+          გერმანული სოსისი ვეღარ შველის გულს, ელენეს ნახვა უნდა, თუნდაც ერთ წუთს. რუსთავში ელენეა, გერმანიაში გიორგი, მათი სიყვარულის ამბავი გახდა უკვე ისტორია!
+        </p>
+      </div>
+
+      <!-- Signature Section -->
+      <div class="parchment-signature">
+        <div class="signature-valediction">სიყვარულით,</div>
+        <div class="signature-name">ელენე</div>
+        <div class="signature-heart">❤️</div>
+      </div>
+
+      <div class="modal-bottom-actions">
+        <button id="modal-hug-reply-btn" class="modal-gold-btn" type="button">
+          გაუგზავნე ჩახუტება საპასუხოდ 💌
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
